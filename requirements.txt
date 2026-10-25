@@ -1,0 +1,10 @@
+ultralytics
+opencv-python-headless
+numpy
+pandas
+matplotlib
+torch
+# Detectron2 (panoptic script only) is installed separately from source:
+!rm -rf detectron2
+!pip install -q ninja
+!pip install --no-build-isolation 'git+https://github.com/facebookresearch/detectron2.git'
